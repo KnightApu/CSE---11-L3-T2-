@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+\title{CSE 301 Assignment}
+\author{Rafi Kamal}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\paragraph{Question}
+Is it possible to obtain $Z_n$ regions with $n$ bent lines when the angle at
+each zig is $30\degree$ ?
+
+\paragraph{Answer}
+Yes, it is possible. 
+
+\paragraph{Proof}
+We proof it by induction. Assume $z_n$ is the number of regions we get from $n$ bent lines where the angle at each zig is $30\degree$. Our hypothesis is, $z_n = Z_n$.\newline
+The base case trivially holds. For $n = 1$, $Z_n = 2$ for $0\degree < \theta < 180\degree$, where $\theta$ is the angle of the zig. So, $z_1 = Z_1$.\newline
+Let's assume our hypothesis holds for $n = m$ i.e. $z_m = Z_m$. We place another bent line with $30\degree$ angle at zig. The only condition under which $z_{m+1} != Z_{m+1}$ is when any of the two arms of the new bent line doesn't intersect with some arm from the existing $2m$ arms. This is possible only when any of the two arms of the new bent line is parallel with an exisiting arm. But there are inifinite ways to place the new bent line. So it is always possible to place the new bent line in a way so that it doesn't become parallel with any of the existing arms. Hence our hypothesis holds for $n = m + 1$ and the proof completes.
+
+\end{document}
